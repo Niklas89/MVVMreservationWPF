@@ -1,0 +1,19 @@
+﻿<Application x:Class="Reservoom.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Reservoom"> 
+    <!-- Removed StartupUri="MainWindow.xaml" because it automaticly displays a MainWindow on startup. We are manually doing it in App.xaml.cs -->
+    <Application.Resources>
+        <Style TargetType="Button"> <!-- specify which button with x:Key -->
+            <Setter Property="Padding" Value="10 5" />
+        </Style>
+
+        <Style TargetType="TextBox">
+            <Setter Property="Padding" Value="2" />
+        </Style>
+
+        <Style TargetType="TextBlock" x:Key="Header">
+            <Setter Property="FontSize" Value="24" />
+        </Style>
+    </Application.Resources>
+</Application>
